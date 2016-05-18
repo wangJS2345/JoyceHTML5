@@ -13,5 +13,44 @@ and open the template in the editor.
     <body>
         <div>TODO write content</div>
         <h1>MyHTML5</h1>
+        <!--<p>对标签p的注释</p>-->
+        <p>注释文本-在浏览器中显示</p>
+        <!--标签a 用于添加超链接-->
+        <a href="http://www.baidu.com">百度一下</a>
+        
+        <!--标签a不声明href属性,无超链接效果-->
+        <!--<a>百度一下</a>-->
+        
+        <!--标签a的coords属性,在HTML5中无效-->
+        <!--<a href="https://github.com/" coords="0,200,200,40" >github</a>-->
+        
+<!--        点击图片,下载.成功
+        href属性的内容为精要下载的图片的路径.图片路径可以通过将项目中的图片资源拖拽入代码中获得-->
+        <p>点击图片,下载</p>
+        <a href="images/001.png" download="001">
+            <img src="images/001.png" alt=""/>
+        </a>
+        
+<!--        点击图片,进入图片对于的网址
+        点击百度logo,进入百度首页-->
+        <p>点击百度logo,返回百度首页</p>
+        <a href="http://www.baidu.com">
+            <img src="images/baidu_logo.png" alt=""/>
+        </a>
+        <a href="https://www.baidu.com">
+            <img src="images/baidu_logo.png" alt=""/>
+        </a>
+        
+        
+        <!--设置网址的语言-->
+        <p>打开一个网址</p>
+        <a href="https://developer.apple.com/">
+            apple.developer.com
+        </a>
+        <a href="https://developer.apple.com/cn/">
+            苹果开发者中心
+        </a>
+        
+
     </body>
 </html>

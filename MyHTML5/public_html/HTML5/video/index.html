@@ -9,7 +9,6 @@ and open the template in the editor.
         <title>控制video播放</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         
         <!--从事件处理器调用函数,改变文本内容 成功-->
         <script type="text/javascript">
@@ -17,64 +16,41 @@ and open the template in the editor.
                 id.innerText="点击改变后";
                 
             }
+           
         </script>
+        
+        
+        
     </head>
     <body>
-        
-        <!--声明画面内容-->
-        <div style="text-align: left">
-            <!--添加按钮,用于控制video的播放-->
-            <button onclick="playOrStop()">播放/暂停</button> 
-            <button onclick="bigView()">大屏播放</button>
-            <button onclick="smallView()">小屏播放</button>
-            <button onclick="normalView()">屏幕适中</button>
-            
-            <br />
-            <video id="myVideoPlay" style="margin-top: 10px;" width="320" height="240">
-                <source src="../../videos/0012.mp4" type="video/mp4" />
-                Your browser does not support the <code>video</code> tag.
-            </video>
-        </div>
-                      
+      
         <!--点击文本,改变文言-->
         <h1 onclick="this.innerHTML='改变后!'">改变前</h1>
         <h1 onclick="changeText(this)">点击改变</h1>
-
+        
+        <!--video播放画面 控制按钮-->
+        <div>
+            <button onclick="playOrStop()">播放/暂停</button>
+            <video id="myVideo" width="320" height="240" style="margin-left: 10px;">
+                <source src="../../videos/0012.mp4" type="video/mp4">
+                Your browser does not support the <code>video</code> tag.
+            </video>
+           
+        </div>
+      
     </body>
-    
+   
+    <!--根据标签名获取对象 getElementsByTagName 播放/暂停video-->
     <script type="text/javascript">
-        var myVideo=document.getElementsById("myVideoPlay");
-
-        //播放/暂停方法
+            var video1=document.getElementsByTagName("video");
+            var video2=video1[0];
             function playOrStop(){
-                //如果video停止,执行播放事件;如果video正在播放,执行暂停事件
-                //play() video播放
-                //pause() video暂停播放
-                if(myVideo.paused){
-                    myVideo.play();
+                if(video2.paused){
+                    video2.play();
                 }else {
-                    myVideo.pause();
+                    video2.paused();
                 }
             }
-            
-             //大屏播放方法
-            function bigView(){
-                myVideo.width=320*1.5;
-                myVideo.height=240*1.5;
-            }
-            
-                    
-        //小屏播放
-        function smallView(){
-            myVideo.width=320*0.5;
-                myVideo.height=240*0.5;
-        }
-        
-        
-            //屏幕适中播放
-            function normalView(){
-                myVideo.width=320;
-                myVideo.height=240;
-            }
-    </script>
+        </script>
+
 </html>

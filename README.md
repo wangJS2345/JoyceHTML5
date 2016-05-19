@@ -11,4 +11,11 @@ HTML5学习
 3.HTML5全局属性
   class
 
-#添加mp4文件 播放成功
+2016/5/18
+1.添加mp4文件 播放成功
+  video标签
+  controls属性:向用户显示控件
+  autoplay属性:自动播放视频
+  height属性:视频的高度
+  width属性:视频的宽度
+  loop属性:视频自动重拨

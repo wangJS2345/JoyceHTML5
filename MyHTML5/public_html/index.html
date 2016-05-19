@@ -64,7 +64,21 @@ and open the template in the editor.
             苹果开发者中心
         </a>
         
+        <!--添加视频文件,播放成功-->
+        <!--直接把视频文件拖入<body>标签内,自动添加了此部分内容-->
         <video width="320" height="240" controls>
+            <source src="videos/0012.mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> tag.
+        </video>
+        
+<!--        就绪后马上播放视频
+        controls 向用户显示控件
+        autoplay 自动播放
+        height   视频的高度
+        width    视频的宽度
+        loop     视频自动重拨
+-->
+<video width="300" height="200" controls="controls" autoplay="autoplay" loop="loop">
             <source src="videos/0012.mp4" type="video/mp4">
             Your browser does not support the <code>video</code> tag.
         </video>

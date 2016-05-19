@@ -9,6 +9,15 @@ and open the template in the editor.
         <title>控制video播放</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+        <!--从事件处理器调用函数,改变文本内容 成功-->
+        <script type="text/javascript">
+            function changeText(id){
+                id.innerText="点击改变后";
+                
+            }
+        </script>
     </head>
     <body>
         <div>控制video播放</div>
@@ -27,6 +36,8 @@ and open the template in the editor.
                 Your browser does not support the <code>video</code> tag.
             </video>
         </div>
+        
+        <p id="myText">点击文字</p>
         
         <!--画面内容的事件-->
         <!--
@@ -64,7 +75,10 @@ and open the template in the editor.
             }
         </script>
         -->
-                     
+              
+<!--        点击文本,改变文言-->
+        <h1 onclick="this.innerHTML='改变后!">改变前</h1>
+        <h1 onclick="changeText(this)">点击改变</h1>
     </body>
     
     <script type="text/javascript">

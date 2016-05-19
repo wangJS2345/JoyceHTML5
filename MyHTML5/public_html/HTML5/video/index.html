@@ -14,12 +14,9 @@ and open the template in the editor.
         <script type="text/javascript">
             function changeText(id){
                 id.innerText="点击改变后";
-                
             }
-           
+               
         </script>
-        
-        
         
     </head>
     <body>
@@ -35,7 +32,7 @@ and open the template in the editor.
             <!--点击,放大video画面-->
             <button onclick="bigPlay()">放大画面</button>
             
-            <video id="myVideo" width="320" height="240" style="margin-top: 10px;">
+            <video id="myVideo1" width="320" height="240" style="margin-top: 10px;">
                 <source src="../../videos/0012.mp4" type="video/mp4">
                 Your browser does not support the <code>video</code> tag.
             </video>
@@ -44,8 +41,9 @@ and open the template in the editor.
       
     </body>
    
-    <!--根据标签名获取对象 getElementsByTagName 播放/暂停video-->
+    
     <script type="text/javascript">
+            //根据标签名获取对象 getElementsByTagName 播放/暂停video
             var video1=document.getElementsByTagName("video");
             var video2=video1[0];
             function playOrStop(){
@@ -56,6 +54,7 @@ and open the template in the editor.
                 }
             }
             
+            //放大播放画面
             function bigPlay(){
                 video2.width=320*1.5;
                 video2.height=240*1.5;

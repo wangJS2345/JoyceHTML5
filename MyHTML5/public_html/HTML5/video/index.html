@@ -8,11 +8,12 @@ and open the template in the editor.
     <head>
         <title>控制video播放</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     </head>
     <body>
         <div>控制video播放</div>
         
+        <!--声明画面内容-->
         <div style="text-align: left">
             <!--添加按钮,用于控制video的播放-->
             <button onclick="playOrStop()">播放/暂停</button> 
@@ -20,7 +21,47 @@ and open the template in the editor.
             <button onclick="smallView()">小屏播放</button>
             <button onclick="normalView()">屏幕适中</button>
             
+            <br />
+            <video id="myVideo" style="margin-top: 20px;" width="320" height="240">
+                <source src="../../videos/0012.mp4" type="video/mp4">
+                Your browser does not support the <code>video</code> tag.
+            </video>
         </div>
+        
+        <!--画面内容的事件-->
+        <script type="text/javascript">
+            //根据ID拿到将要进行操作的文件
+//            var myVideo=document.getElementsById("myVideo");
+            var myVideo=document.getElementsByTagName("video")[0];
+            
+            //播放/暂停方法
+            function playOrStop(){
+                //如果video停止,执行播放事件;如果video正在播放,执行暂停事件
+                if(myVideo.paused){
+                    myVideo.play();
+                }else {
+                    myVideo.pause();
+                }
+            }
+            
+            //大屏播放方法
+            function bigView(){
+                myVideo.width=320*1.5;
+                myVideo.height=240*1.5;
+            }
+            
+            //小屏播放
+            function smallView(){
+                myVideo.width=320*0.5;
+                myVideo.height=240*0.5;
+            }
+            
+            //屏幕适中播放
+            function normalView(){
+                myVideo.width=320;
+                myVideo.height=240;
+            }
+        </script>
                      
     </body>
 </html>

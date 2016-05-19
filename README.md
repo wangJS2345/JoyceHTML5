@@ -24,3 +24,8 @@ HTML5学习
 
 2.控制video的播放
   从初始HTML跳转到另一个画面
+
+  getElementsByTagName根据标签名获取控件成功
+  getElementsById根据控件id获取控件失败
+
+  控制video的播放/暂停/播放画面大小成功

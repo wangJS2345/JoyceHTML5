@@ -31,6 +31,8 @@ and open the template in the editor.
             <button onclick="playOrStop()">播放/暂停</button>
             <!--点击,放大video画面-->
             <button onclick="bigPlay()">放大画面</button>
+            <!--点击,缩小video画面-->
+            <button onclick="smallPlay()">缩小画面</button>
             
             <video id="myVideo1" width="320" height="240" style="margin-top: 10px;">
                 <source src="../../videos/0012.mp4" type="video/mp4">
@@ -38,6 +40,16 @@ and open the template in the editor.
             </video>
            
         </div>
+        
+       
+        <script type="text/javascript">
+            //点击,缩小video播放画面
+            var myVideo=document.getElementsById("myVideo1");
+            function smallPlay(){
+                myVideo.width=320*0.7;
+                myVideo.height=240*0.7;
+            }
+        </script>
       
     </body>
    

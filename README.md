@@ -1,7 +1,7 @@
 # JoyceHTML5
 HTML5学习
 
-2016/5/18
+###2016/5/18
 1.NetBeans新建HTML5项目
 
 2.标签a的属性
@@ -11,7 +11,7 @@ HTML5学习
 3.HTML5全局属性
   class
 
-2016/5/18
+###2016/5/19
 1.添加mp4文件 播放成功
   video标签
   controls属性:向用户显示控件

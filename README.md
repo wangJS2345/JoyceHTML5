@@ -29,3 +29,7 @@ HTML5学习
   getElementsById根据控件id获取控件失败
 
   控制video的播放/暂停/播放画面大小成功
+
+  getElementsById根据控件id获取控件失败的原因:
+  画面加载实在<body></body>之前执行,此时此时id="myVideo"对应的控件,还没有加载进去.
+  解决办法:画面加载顺序是:先加载<head>，再加载<body>,所以把<script>中的内容,即javascript,写在<body>之后,</html>之前就可以了

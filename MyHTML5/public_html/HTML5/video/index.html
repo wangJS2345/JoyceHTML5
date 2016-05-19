@@ -20,7 +20,6 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-        <div>控制video播放</div>
         
         <!--声明画面内容-->
         <div style="text-align: left">
@@ -37,7 +36,7 @@ and open the template in the editor.
             </video>
         </div>
                       
-<!--        点击文本,改变文言-->
+        <!--点击文本,改变文言-->
         <h1 onclick="this.innerHTML='改变后!'">改变前</h1>
         <h1 onclick="changeText(this)">点击改变</h1>
 
@@ -45,16 +44,12 @@ and open the template in the editor.
     
     <script type="text/javascript">
         var myVideo=document.getElementsById("myVideoPlay");
-        
-        //小屏播放
-        function smallView(){
-            myVideo.width=320*0.5;
-                myVideo.height=240*0.5;
-        }
-        
+
         //播放/暂停方法
             function playOrStop(){
                 //如果video停止,执行播放事件;如果video正在播放,执行暂停事件
+                //play() video播放
+                //pause() video暂停播放
                 if(myVideo.paused){
                     myVideo.play();
                 }else {
@@ -68,6 +63,14 @@ and open the template in the editor.
                 myVideo.height=240*1.5;
             }
             
+                    
+        //小屏播放
+        function smallView(){
+            myVideo.width=320*0.5;
+                myVideo.height=240*0.5;
+        }
+        
+        
             //屏幕适中播放
             function normalView(){
                 myVideo.width=320;

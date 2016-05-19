@@ -9,8 +9,51 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style type="text/css">
+            /*width:宽度  height:高度  padding:左边距 border:边线宽度 solid边线颜色*/
+            #div1 {width: 400px;height: 200px;padding: 10px;border: 1px solid #ff0000;}
+        </style>
+
+        
+        <script type="text/javascript">
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+            
+            function drag(ev){
+                //dataTransfer.setData() 方法设置被拖数据的数据类型和值
+                ev.dataTransfer.setData("Text",ev.target.id);
+            }
+            
+            function drop(ev){
+                //调用 preventDefault() 来避免浏览器对数据的默认处理
+                ev.preventDefault();
+                //dataTransfer.getData("Text") 方法获得被拖的数据,将返回在 setData() 方法中设置为相同类型的任何数据
+                var data=ev.dataTransfer.getData("Text");
+                //getElementById(data):被拖数据是被拖元素的 id ("drag1")
+                //target.appendChild:把被拖元素追加到放置元素（目标元素）中
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
     </head>
     <body>
         <div>TODO write content</div>
+        
+        
+        <p>请把的图片拖放到矩形中：</p>
+
+        <!--ondrop属性 进行放置-->
+        <!--ondragover属性 放置到何处-->
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <br />
+         <!--图片img标签的draggable属性,是否可拖拽-->
+        <!--draggable属性,并非img独有 有该属性的元素,均可拖拽-->
+        <!--drag(event) 规定被拖动的数据-->
+        <!--ondragstart属性 进行拖动-->
+        <img id="drag1" src="../../images/001.png" alt="" draggable="true" ondragstart="drag(event)" />
+        
+       
     </body>
 </html>

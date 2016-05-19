@@ -30,8 +30,12 @@ and open the template in the editor.
         
         <!--video播放画面 控制按钮-->
         <div>
+            <!--点击,播放/暂停video-->
             <button onclick="playOrStop()">播放/暂停</button>
-            <video id="myVideo" width="320" height="240" style="margin-left: 10px;">
+            <!--点击,放大video画面-->
+            <button onclick="bigPlay()">放大画面</button>
+            
+            <video id="myVideo" width="320" height="240" style="margin-top: 10px;">
                 <source src="../../videos/0012.mp4" type="video/mp4">
                 Your browser does not support the <code>video</code> tag.
             </video>
@@ -48,8 +52,13 @@ and open the template in the editor.
                 if(video2.paused){
                     video2.play();
                 }else {
-                    video2.paused();
+                    video2.pause();
                 }
+            }
+            
+            function bigPlay(){
+                video2.width=320*1.5;
+                video2.height=240*1.5;
             }
         </script>
 

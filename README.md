@@ -38,3 +38,6 @@ HTML5学习
   注意：
   <h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
   一定要注意，不能有遗漏符号，否则代码无效
+  
+  http://www.w3school.com.cn/html5/html_5_draganddrop.asp
+  将图片拖放至矩形

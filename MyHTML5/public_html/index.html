@@ -82,6 +82,19 @@ and open the template in the editor.
             <source src="videos/0012.mp4" type="video/mp4">
             Your browser does not support the <code>video</code> tag.
         </video>
+ 
+<!--video的preload属性,内容对应为load.如果有autoplay属性,以autoplay属性为准
+load对应的值的意义:
+    auto - 当页面加载后载入整个视频 点击播放按钮,直接播放视频
+    meta - 当页面加载后只载入元数据 点击播放按钮,播放视频,与auto的现象一样
+    none - 当页面加载后不载入视频  点击播放按钮,加载视频,加载完毕后播放-->
+<!--video的src属性,表明播放视频的地址,是本地文件或网络文件-->
+<video width="300" height="300" preload="none" controls="controls">
+        <source src="videos/0012.mp4" type="video/mp4">
+        Your browser does not support the <code>video</code> tag.  
+</video>
+
+
 
     </body>
 </html>

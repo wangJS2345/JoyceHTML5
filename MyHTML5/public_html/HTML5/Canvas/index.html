@@ -9,8 +9,69 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+            //绘制画布
+            //根据id获取canvas元素
+            var c=document.getElementById("myCanvas1");
+            //创建context对象
+            var cxt=c.getContext("2d");
+            //规定颜色
+            cxt.fillStyle="#FF0000";
+            //规定形状/颜色/尺寸
+            cxt.fillRect=(0,0,150,75);
+                
+        </script>
+        
+        <script type="text/javascript">
+            var c=document.getElementById("newCanvas");
+            var cxt=c.getContext("2d");
+            cxt.fillRect=(300,100,100,70);
+            cxt.fillStyle="#ffff00";
+        </script>
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>画布</h1>
+        
+        <!--添加画布元素-->
+        <!--必须设置style属性,否则画布显示不出来-->
+        <canvas id="myCanvas1" width="400" height="200" style="border: 1px solid #ff00ff"></canvas>
+        <!--斜线-->
+        <canvas id="lineCanvas" width="200" height="100" style="border: 1px solid #ff00ff"></canvas>
+        
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.moveTo(10,10);
+cxt.lineTo(150,50);
+cxt.lineTo(10,50);
+cxt.stroke();
+
+</script>
+
+<canvas id="newCanvas" width="200" height="100" style="border: 1px solid #057748"></canvas>
+
     </body>
+    
+    <script type="text/javascript">
+        //斜线
+        var c=document.getElementById("lineCanvas");
+        var cxt=c.getContext("2d");
+        //线的起点
+        cxt.moveTo(10,20);
+        //线的节点1
+        cxt.lineTo(140,30);
+        //线的节点2
+        cxt.lineTo(20,80);
+        cxt.lineTo(50,6);
+        //开始绘制线
+        cxt.stroke();
+        //线是按照点的顺序进行绘制的
+    </script>
 </html>

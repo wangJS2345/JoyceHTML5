@@ -10,18 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <script type="text/javascript">
-            //绘制画布
-            //根据id获取canvas元素
-            var c=document.getElementById("myCanvas1");
-            //创建context对象
-            var cxt=c.getContext("2d");
-            //规定颜色
-            cxt.fillStyle="#FF0000";
-            //规定形状/颜色/尺寸
-            cxt.fillRect=(0,0,150,75);
-                
-        </script>
+        
         
         <script type="text/javascript">
             var c=document.getElementById("newCanvas");
@@ -36,7 +25,7 @@ and open the template in the editor.
         
         <!--添加画布元素-->
         <!--必须设置style属性,否则画布显示不出来-->
-        <canvas id="myCanvas1" width="400" height="200" style="border: 1px solid #ff00ff"></canvas>
+        <canvas id="myCanvas1" width="100" height="30" style="border: 1px solid #ff00ff"></canvas>
         <!--斜线-->
         <canvas id="lineCanvas" width="200" height="100" style="border: 1px solid #ff00ff"></canvas>
         <!--圆-->
@@ -46,6 +35,9 @@ and open the template in the editor.
         
         <!--把图片放置到画布上-->
         <canvas id="imageCanvas" width="200" height="100" style="border: 1px solid #800000;">把图片放置到画布上</canvas>
+        
+        <!--绘制矩形 填充颜色-->
+        <canvas id="rectangleCanvas" width="200" height="100" style="border: 1px solid #808080;">绘制矩形 填充颜色</canvas>
         
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
@@ -64,8 +56,18 @@ cxt.stroke();
 
 <canvas id="newCanvas" width="200" height="100" style="border: 1px solid #057748"></canvas>
 
+<!--绘制矩形 填充颜色-->
+<canvas id="greenCanvas"></canvas>
+<script type="text/javascript">
+        //绘制矩形 填充绿色
+        var c=document.getElementById('greenCanvas');
+        var ctx=c.getContext('2d');
+        ctx.fillStyle='#00ff00';
+        ctx.fillRect(0,0,100,100);
+    </script>
 
     </body>
+    
     
     <script type="text/javascript">
         //斜线
@@ -128,4 +130,26 @@ cxt.stroke();
         cxt.drawImage(img,0,0);
         
     </script>
+    
+    <script type="text/javascript">
+        //绘制矩形 填充颜色
+        var c=document.getElementById("rectangleCanvas");
+        var cxt=c.getContext("2d");
+        cxt.fillStyle="#eee8aa";
+        cxt.fillRect(10,10,200,80);
+        
+    </script>
+    
+    <script type="text/javascript">
+            //绘制画布
+            //根据id获取canvas元素
+            var c=document.getElementById("myCanvas1");
+            //创建context对象
+            var cxt=c.getContext("2d");
+            //规定颜色
+            cxt.fillStyle="#F4A460";
+            //规定形状/颜色/尺寸
+            cxt.fillRect=(0,0,100,30);
+                
+        </script>
 </html>

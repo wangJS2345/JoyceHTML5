@@ -41,3 +41,7 @@ HTML5学习
   
   http://www.w3school.com.cn/html5/html_5_draganddrop.asp
   将图片拖放至矩形
+
+####2016/05/20
+1.图片在矩形中拖放
+  来回拖放成功，但是由于未注明要拖放图片的id，画面上的图片，draggable属性为true的，都可以进行来回拖放

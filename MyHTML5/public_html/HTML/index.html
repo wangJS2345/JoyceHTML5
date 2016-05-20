@@ -13,6 +13,7 @@ and open the template in the editor.
     <body>
     <!--在body标签中设置bgcolor属性的值,修改网页的背景颜色-->
     <!--<body bgcolor="#e0ffff">-->
+    <div>
         <h1>标题</h1>
         <p>文本内容,可选中</p>
         <p>标签html之间,描述网页</p>
@@ -42,7 +43,8 @@ and open the template in the editor.
            <p>空元素在开始标签内结束</p>
            <p>在空元素的开始标签中添加"/",可以用来关闭空元素</p>
            <p>标签的写法推荐使用小写字母,大写也可以</p>
-           
+    </div>
+    <div>
            <p>定义一个标题,居中排列</p>
            <!--align属性的值为center时,不论网页宽度如何,该标签的内容始终水平居中-->
            <h1 align="center">居中的标题</h1>
@@ -69,6 +71,8 @@ and open the template in the editor.
            <p>泉眼无声惜细流，<br />树阴照水爱晴柔。<br />小荷才露尖尖角，<br />早有蜻蜓立上头。</p>
            <p>我直接输入中文的句号就不行,用copy的就可以 /(ㄒoㄒ)/~~</p>
            <p>怎么设置段落的每一行都缩进啊!!!!</p>
+    </div>
+    <div>
            <hr />
            <b>粗体文本or黑体文本....</b>
            <br />
@@ -101,6 +105,33 @@ and open the template in the editor.
         }
     </pre>
     <pre>两个pre标签之间,不用添加换行标签.可以把它理解为标签p,只不过是允许换行和空格的标签</pre>
-    
+    <hr />
+    </div>
+    <div>
+        <h1>在计算机中输入地址,就像写信一样</h1>
+        <p>标签套标签,可以有选择性的把标签过来,内容和功能相关的放到一块儿</p>
+        <p style="text-indent: 2em">使用div标签把标签归纳起来,不影响画面上的布局,其他标签就不一定了 O(∩_∩)O~</p>
+        <address>地址用address标签写,比较有氛围 用了address标签,文言就写起来了呢!</address>
+        <address>
+            北京市朝阳区<br>
+            建国路建国门外<br>
+            88号
+        </address>
+    </div>
+    <div>
+        <hr />
+        <h1>改变文言的方向</h1>
+        <p style="text-indent: 2em">行从右向左显示文言
+            <br />
+            <bdo dir="ltr" style="text-indent: 2em">ltr:从左向右显示</bdo>
+            <br/>
+            <bdo dir="rtl">rtl:从右向左显示,style添加缩进2个文字是无效哒!</bdo>
+        </p>
+    </div>
+    <hr/>
+    <div>
+        <h1 align="center">块引用</h1>
+        <a href="http://www.w3school.com.cn/html/html_formatting.asp">块引用</a>
+    </div>
     </body>
 </html>

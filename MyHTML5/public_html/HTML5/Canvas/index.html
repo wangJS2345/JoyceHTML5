@@ -39,6 +39,8 @@ and open the template in the editor.
         <canvas id="myCanvas1" width="400" height="200" style="border: 1px solid #ff00ff"></canvas>
         <!--斜线-->
         <canvas id="lineCanvas" width="200" height="100" style="border: 1px solid #ff00ff"></canvas>
+        <!--圆-->
+        <canvas id="roundCanvas" width="200" height="100" style="border: 1px solid #FF69B4"></canvas>
         
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
@@ -57,6 +59,7 @@ cxt.stroke();
 
 <canvas id="newCanvas" width="200" height="100" style="border: 1px solid #057748"></canvas>
 
+
     </body>
     
     <script type="text/javascript">
@@ -73,5 +76,21 @@ cxt.stroke();
         //开始绘制线
         cxt.stroke();
         //线是按照点的顺序进行绘制的
+        
+      
+    </script>
+    
+    <script type="text/javascript">
+        var c=document.getElementById("roundCanvas");
+        var cxt=c.getContext("2d");
+        //填充颜色
+        cxt.fillStyle="#32cd32";
+        //参数依次是:圆的中心的的坐标x,圆的中心的的坐标y,半径,圆的起始位置
+        //Math.PI*2:PI就是起始位置.沿顺时针路线,分别是0.5 PI（正下方）,1 PI和1.5 PI（正上方）,为画饼图提供了扇形范围的依据.第五个参数是弧长Math.PI*2就是整个圆,Math.PI是半圆
+        //true是顺时针false是顺时针
+        cxt.arc(50,30,30,0,Math.PI*2,true);
+        cxt.closePath();
+        cxt.fill();
+        
     </script>
 </html>

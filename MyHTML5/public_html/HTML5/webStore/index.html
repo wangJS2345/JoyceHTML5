@@ -4,6 +4,13 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!--web存储-->
+<!--localStorage 方法
+localStorage 方法存储的数据没有时间限制。第二天、第二周或下一年之后，数据依然可用。-->
+
+<!--sessionStorage 方法
+sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。-->
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -11,6 +18,46 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <!--<div>TODO write content</div>-->
+        <h1>web存储</h1>
+        
+        <!--localStorage-->
+        <script type="text/javascript">
+            //设置将要存储的值
+            localStorage.lastname="kk";
+            //获取存储的值
+            document.write("the last name :"+localStorage.lastname);
+        </script>
+        
+        <!--统计用户访问次数-->
+        <script type="text/javascript">
+            if(localStorage.pagecount) {
+                localStorage.pagecount=Number(localStorage.pagecount)+1;
+            }else {
+                localStorage.pagecount=1;
+            }
+            document.write("访问次数:"+localStorage.pagecount+"次"+"  "+"time(s).");
+        </script>
+        <!--localStorage-->
+
+        <!--sessionStorage-->
+        <script type="text/javascript">
+            sessionStorage.lastname="GB";
+            document.write(sessionStorage.lastname);
+        </script>
+        
+        <!--统计访问次数-->
+        <script type="text/javascript">
+            if(sessionStorage.pagecount){
+                sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+            }else {
+                sessionStorage.pagecount=1;
+            }
+            document.write("sessionStorage访问次数:"+sessionStorage.pagecount+"次");
+        </script>
+        
+        <!--sessionStorage-->
+
+        
     </body>
 </html>

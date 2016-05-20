@@ -41,6 +41,8 @@ and open the template in the editor.
         <canvas id="lineCanvas" width="200" height="100" style="border: 1px solid #ff00ff"></canvas>
         <!--圆-->
         <canvas id="roundCanvas" width="200" height="100" style="border: 1px solid #FF69B4"></canvas>
+        <!--渐变矩形-->
+        <canvas id="changeCanvas" width="200" height="100" style="border: 1px solid #ff00ff;">渐变矩形</canvas>
         
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
@@ -88,9 +90,27 @@ cxt.stroke();
         //参数依次是:圆的中心的的坐标x,圆的中心的的坐标y,半径,圆的起始位置
         //Math.PI*2:PI就是起始位置.沿顺时针路线,分别是0.5 PI（正下方）,1 PI和1.5 PI（正上方）,为画饼图提供了扇形范围的依据.第五个参数是弧长Math.PI*2就是整个圆,Math.PI是半圆
         //true是顺时针false是顺时针
-        cxt.arc(50,30,30,0,Math.PI*2,true);
+        //arc(定义一个中心点，半径，起始角度，结束角度，和绘图方向：顺时针或逆时针)
+        cxt.arc(50,30,23,0,Math.PI*2,true);
         cxt.closePath();
         cxt.fill();
         
+    </script>
+    
+    <script type="text/javascript">
+        var c=document.getElementById("changeCanvas");
+        var cxt=c.getContext("2d");
+        //渐变矩形的大小
+        var grd=cxt.createLinearGradient(0,0,100,50);
+        //渐变矩形的颜色1 开始颜色
+        grd.addColorStop(0,"#008080");
+        //渐变矩形的颜色2 结束颜色
+        grd.addColorStop(1,"#00ff00");
+        //渐变矩形填充颜色
+        cxt.fillStyle=grd;
+        //渐变矩形的坐标,大小
+        cxt.fillRect(10,10,100,50);
+
+
     </script>
 </html>

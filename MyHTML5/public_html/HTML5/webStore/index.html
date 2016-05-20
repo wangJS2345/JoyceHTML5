@@ -58,6 +58,20 @@ sessionStorage 方法针对一个 session 进行数据存储。当用户关闭�
         
         <!--sessionStorage-->
 
+        <script type="text/javascript">
+            localStorage.value="FF";
+            document.write("localStorage:"+localStorage.value);
+            
+            sessionStorage.value="POPO";
+            document.write("sessionStorage:"+sessionStorage.value);
+        </script>
+        
+        <script type="text/javascript">
+            sessionStorage.value="POPO";
+            document.write("sessionStorage:"+sessionStorage.value);
+        </script>
         
     </body>
+   
+    
 </html>

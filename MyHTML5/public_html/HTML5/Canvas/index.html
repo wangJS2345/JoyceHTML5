@@ -44,6 +44,9 @@ and open the template in the editor.
         <!--渐变矩形-->
         <canvas id="changeCanvas" width="200" height="100" style="border: 1px solid #ff00ff;">渐变矩形</canvas>
         
+        <!--把图片放置到画布上-->
+        <canvas id="imageCanvas" width="200" height="100" style="border: 1px solid #800000;">把图片放置到画布上</canvas>
+        
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
 </canvas>
@@ -83,6 +86,7 @@ cxt.stroke();
     </script>
     
     <script type="text/javascript">
+        //绘制圆
         var c=document.getElementById("roundCanvas");
         var cxt=c.getContext("2d");
         //填充颜色
@@ -98,6 +102,7 @@ cxt.stroke();
     </script>
     
     <script type="text/javascript">
+        //绘制渐变矩形
         var c=document.getElementById("changeCanvas");
         var cxt=c.getContext("2d");
         //渐变矩形的大小
@@ -112,5 +117,15 @@ cxt.stroke();
         cxt.fillRect(10,10,100,50);
 
 
+    </script>
+
+    <script type="text/javascript">
+        //把图片放置到画布上
+        var c=document.getElementById("imageCanvas");
+        var cxt=c.getContext("2d");
+        var img=new Image()
+        img.src="../../images/icon.png"
+        cxt.drawImage(img,0,0);
+        
     </script>
 </html>

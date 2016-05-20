@@ -69,3 +69,9 @@ cxt.arc(100,100,30,0,Math.PI*2,true); 括号内第一个和第二个参数,代�
 
 #####web存储
 注意：localStorage或sessionStorage两种存储方法，存储值得对象可以自己命名
+
+#Joyce HTML
+###HTML学习
+####2016/05/20
+
+

@@ -21,10 +21,85 @@ and open the template in the editor.
         p {
             color: #8B008B;
             font-family:arial;
+            margin: 0;
+            padding: 0;
         }
         h2,h3,h4 {
             color: #cd0a0a;
         }
+        li strong {
+            font-style: italic;
+            font-weight: normal;
+            color: #adff2f;
+        }
+        p a {
+            color: #00cc99;
+            font-size: 36px;
+        }
+        h2 a {
+            color: #00cc99;
+            font-weight: 32px;
+        }
+        #red {
+            color: red;
+            font-size: 22px;
+        }
+        #grern {
+            color: green;
+            font-size: 36px;
+        }
+        #moreThings h1 {
+            color: red;
+        }
+        #moreThings h2 {
+            color: blue;
+        }
+        #moreThings p {
+            color: slateblue;
+        }
+        
+        #again {
+            /*color: red;*/
+            border: 3px dotted #00ff00;
+            padding: 10px;
+        }
+        
+        .left {
+            text-align: center;
+            color: #00bfff;
+            background-color: #fcefa1;
+        }
+        
+        .left img {
+            border: 2px dotted #cd0a0a;
+            padding: 8px;
+        }
+        
+        [title] {
+/*            color: #90EE90;
+            text-align: right;*/
+        }
+        
+        [title |=e] {
+            color: #adff2f;
+        }
+        
+        input[type="text"]
+{
+  width:150px;
+  display:block;
+  margin-bottom:10px;
+  background-color:yellow;
+  font-family: Verdana, Arial;
+}
+
+input[type="button"]
+{
+  width:120px;
+  margin-left:35px;
+  display:block;
+  font-family: Verdana, Arial;
+}
     </style>
     </head>
     <body>
@@ -35,5 +110,49 @@ and open the template in the editor.
         <h2>标题样式2</h2>
         <h3>标题样式3</h3>
         <h4>标题也是4</h4>
+        
+    <li><strong>试试能不能变斜体</strong></li>
+    
+    <p>
+        <a href="https://www.baidu.com">点击,打开百度</a>
+    </p>
+    <br />
+    <h2>点击按钮,跳转到<a href="https://www.baidu.com">百度</a></h2>
+    
+    <br />
+    
+    <p id="red">红色字体的段落</p>
+    <p id="grern">绿色字体的段落</p>
+    <br />
+    <hr />
+    <div id="moreThings">
+        <h1>div标签超过2个元素</h1>
+        <h2>h2标签</h2>
+        <p>看看最终效果</p>
+    </div>
+    <hr />
+    <div id="again">
+        <h1>againStyle</h1>
+        <p>tryagain</p>
+        <h2 class="left">左侧标题</h2>
+        <p class="left">左侧段落</p>
+        <p class="left">
+            <img src="../../images/001.png" alt=""/>
+        </p>
+        <p title="yes">YES</p>
+        <p title="ok">OK<P/>
+        <P title="sure">sure</p>
+    </div>
+    <hr />
+    <div>
+        <form name="input" action="" method="get">
+            <input type="text" name="username" value="windows" size="20" />
+            <input type="text" name="password" value="123456" size="18" />
+            <input type="button" value="提交" /> 
+        </form>
+        
+        
+    </div>
+    
     </body>
 </html>

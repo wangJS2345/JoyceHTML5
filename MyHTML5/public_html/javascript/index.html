@@ -54,13 +54,79 @@ and open the template in the editor.
             <button type="button" onclick="changeColor()">外部js 改变颜色</button>
                         <script src="myJavaScript.js" type="text/javascript"></script>
                         <p>将函数写入外部js文件,html文件调用js函数成功</p>
+                        
+                        <br />
+                        <p id="change01">通过id找到html元素,并改变它</p>
+                        <script>
+                            var txt=document.getElementById("change01");
+                            txt.innerHTML="这已经是改变后的样子了";
+                            
+                        </script>
+                        
+                        <p>直接把p元素写入html</p>
+                        <script>
+                            document.write("<p>直接写下这个元素</p>");
+                        </script>
+                        <button type="button" onclick="writeTxt()">点击</button>
+                        <br />
+                        <button type="button" onclick="changeTwo()">这次改两处</button>
 
+        </div>
+        <br />
+        <div>
+            <h1>输出</h1>
+            <script>
+            var a = 2;
+            var b = 4;
+            var c = 5;
+            
+            document.write(a + "<br />");
+            document.write(a + b + "<br />");
+            document.write(a + b - c + "<br />");
+            </script>
+            <br />
+            <script>
+                var number = 1;
+                var name = "Joyce";
+                var question = "Hello";
+                
+                document.write(number +"<br />" + name + "<br />" + question);
+            </script>
+            
+        </div>
+        <br />
+        <div>
+            <p>var声明变量,声明变量后,对该变量赋值</p>
+            var name;
+            <br />
+            name="Joyce";
+            <br />
+            <p>也可以在声明变量的同时,给变量赋值</p>
+            var name = "KK";
+            <br />
+            <p>创建名为"name"的变量,并给它赋值为"werewolf",把这个变量放入id="htmlValue"的HTML的段落中</p>
+            <button type="button" onclick="createP()">点击创建变量</button>
+            <p id="htmlValue"></p>
+            <br />
+            <br />
+        </div>
+        <hr />
+        <div>
+            <p>在一条语句中可以声明多个变量,用","分隔.声明多个变量的语句,可以写在一行,也可以写成多行</p>
+            <script>
+                var name="elsa",age=25,job="reader";
+                document.write(name + "," + age + "," +job);
+            </script>
+            <br />
+            <p>设定x=5,y=5*3,计算y的值</p>
+            <button type="button" onclick="vlaueOfY()">计算</button>
+            <p id="vlaueOfY"></p>
         </div>
     </body>
     
     <div>
         <script type="text/javascript">
-            document.write("<h1>标题1</h1>");
+//            document.write("<h1>标题1</h1>");
             
             function changeValue(){
                 x=document.getElementById("changeBefore");
@@ -105,6 +171,33 @@ else
             
             function changeTxt(){
                 document.getElementById("changeTxt").innerHTML="文言改变了!";
+            }
+            
+            
+        </script>
+        <script>
+            function writeTxt(){
+                document.writr("写在这里,整个html画面内容都消失了...");
+            }
+            
+            function changeTwo(){
+                document.getElementById("changeTxt").innerHTML="在改一次,改成这句话";
+                document.getElementById("change01").innerHTML="这次这个也给改了";
+            }
+        </script>
+    </div>
+    <div>
+        <script>
+            function createP(){
+                var name="werewolf";
+                document.getElementById("htmlValue").innerHTML=name;
+            }
+            
+            function vlaueOfY(){
+                var x = 5;
+                var y = x*3;
+                var result=document.getElementById("vlaueOfY");
+                result.innerHTML="y=" + y;
             }
         </script>
     </div>

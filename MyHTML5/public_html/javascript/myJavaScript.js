@@ -8,5 +8,5 @@ function changeColor(){
     var txt=document.getElementById("outJS");
     txt.innerHTML="改变颜色";
     txt.color="#6A5ACD";
-    
+    txt.style="background-color: #cd0a0a";
 }

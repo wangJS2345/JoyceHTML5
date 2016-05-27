@@ -43,6 +43,19 @@ and open the template in the editor.
             <button type="button" onclick="checkInput()">验证</button>
             <p>按钮点击无效的原因,是button的onclick属性中,只加了方法名,漏加了()</p>
         </div>
+        
+        <div>
+            <!--点击按钮,改变文言-->
+            <p id="changeTxt">文言改变之前</p>
+            <button type="button" onclick="changeTxt()">改变文言</button>
+            
+            <!--引用外部js文件-->
+            <p id="outJS">函数写在外部js文件内</p>
+            <button type="button" onclick="changeColor()">外部js 改变颜色</button>
+                        <script src="myJavaScript.js" type="text/javascript"></script>
+                        <p>将函数写入外部js文件,html文件调用js函数成功</p>
+
+        </div>
     </body>
     
     <div>
@@ -88,6 +101,10 @@ else
                     alert("not number");
                 }
 
+            }
+            
+            function changeTxt(){
+                document.getElementById("changeTxt").innerHTML="文言改变了!";
             }
         </script>
     </div>

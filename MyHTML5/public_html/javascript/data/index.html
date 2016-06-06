@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<!--
+</* global i */
+
+!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -44,6 +46,26 @@ and open the template in the editor.
                 document.write(name1 + "<br>" + name2 + "<br>" + name3);
             </script>
             
+        </div>
+        <hr />
+        <div>
+            <h1>添加数组</h1>
+            <script>
+                var i;
+                var cars=new Array();
+                cars[0]="Ford";
+                cars[1]="toyota";
+                cars[2]="BMW";
+                cars[3]="Volo";
+                
+                for(i=0;i<cars.length;i++){
+                    document.write(cars[i] + "<br>");
+                }
+            </script>
+
+
+
+            <h1>数组显示完毕</h1>
         </div>
     </body>
 </html>

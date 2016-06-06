@@ -14,10 +14,18 @@ and open the template in the editor.
         <!--<div>TODO write content</div>-->
         <h1>函数调用</h1>
         <button onclick="openAlert()">点击，弹出提示</button>
+        <br />
+        <button onclick="writePerson('Jinsun','writer')">传参调函数</button>
     </body>
     <script>
         function openAlert(){
             alert("提示信息");
         }
+        
+        function writePerson(name,job){
+            document.write(name + "is a " + job);
+        }
+       
+       
     </script>
 </html>

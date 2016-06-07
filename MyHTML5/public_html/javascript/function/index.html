@@ -18,6 +18,31 @@ and open the template in the editor.
         <button onclick="writePerson('Jinsun','writer')">传参调函数</button>
         <br />
         <button onclick="personModel('Jansun','model')">显示信息</button>
+        <hr />
+        <div>
+            <p>函数返回值</p>
+            <button onclick="myFounction()">获取函数返回值</button>
+            <br />
+            <p>计算，获取返回值</p>
+            <!--<p id="demo"></p>-->
+            <p id ="myValueKK"></p>
+            <script>
+                function myFunction(a,b){
+                    return a*b;
+                }
+                document.getElementById("myValueKK").innerHTML = myFunction(3,9);
+            </script>
+
+<!--<script>
+function myFunction(a,b)
+{
+return a*b;
+}
+
+document.getElementById("demo").innerHTML=myFunction(4,3);
+</script>-->
+
+        </div>
     </body>
     <script>
         function openAlert(){
@@ -33,4 +58,15 @@ and open the template in the editor.
         }
        
     </script>
+    <script>
+//        var myValue = myFounction();
+//        function myFounction(){
+//            var x = 5;
+//            return x;
+//        }
+//        alert(myValue);
+        
+        
+    </script>
+    
 </html>

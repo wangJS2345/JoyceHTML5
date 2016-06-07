@@ -16,6 +16,8 @@ and open the template in the editor.
         <button onclick="openAlert()">点击，弹出提示</button>
         <br />
         <button onclick="writePerson('Jinsun','writer')">传参调函数</button>
+        <br />
+        <button onclick="personModel('Jansun','model')">显示信息</button>
     </body>
     <script>
         function openAlert(){
@@ -25,7 +27,10 @@ and open the template in the editor.
         function writePerson(name,job){
             document.write(name + "is a " + job);
         }
-       
+        
+        function personModel(name,job){
+            alert(name + " is a " + job);
+        }
        
     </script>
 </html>

@@ -61,8 +61,37 @@ and open the template in the editor.
                 
                 d = "5" + 5;
                 document.write("d = " + d + "<br />");
-                
+                               
             </script>
+            <p>规则是：如果把数字与字符串相加，结果的值将成为字符串</p>
+        </div>
+        <div>
+            <hr />
+            <p>判断</p>
+            <h3>if....else</<>
+            <p id="currentHours"><br /></p>
+            <p id="currentTime"><br /></p>
+            <button onclick="theCurrentTime()">点击,问候一下</button>
+            <h3>switch</h3>
+            <p>今天是周 <a id="currentDay"></a></p>
+            <br/>
+            <button onclick="currentDay()">今天是周几啊?</button>
+            <br />
+            <h3>switch的默认值 default</h3>
+            <p id="currentDayAgain">今天是周末吗?</p>
+            <p id="weekend">是否是工作日</p>
+            <button onclick="currentDayAgain()">查看周末</button>
+        </div>
+        <div>
+            <h1>循环</h1>
+            <button onclick="writeFor()">写一个循环</button>
+            <p id="cars">汽车</p>
+            <h3>循环多次</h3>
+            <button onclick="namesFor()">点击,循环以显示全部</button>
+            <p id="namesFor">The name is</p>
+            <h3>for循环中,可以初始化多个值</h3>
+            <button onclick="valuesFor()">点击,显示循环数据</button>
+            <p id="valuesFor">显示数据</p>
         </div>
     </body>
     <script>
@@ -77,8 +106,113 @@ and open the template in the editor.
         function personModel(name,job){
             alert(name + " is a " + job);
         }
-       
+        
+        function theCurrentTime(){
+            var x = "";
+            //获取当前的小时 24小时制
+            var time = new Date().getHours();
+            if(time < 15){
+                x = "before 15:00";
+            }else if(time > 15){
+                x = "after 15:00";
+            }else {
+                x = "is 15:00";
+            }
+            document.getElementById("currentHours").innerHTML = x;
+            //获取当前的秒数
+            var date = new Date().getSeconds();
+            document.getElementById("currentTime").innerHTML = date;
+        }
+        
+        function currentDay(){
+            var day = new Date().getDay();
+            var string = "";
+            switch(day){
+                case 0:{
+                        string = "日";
+                        break;
+                }case 1:{
+                        string = "一";
+                        break;
+                }case 2:{
+                        string = "二";
+                        break;
+                }case 3:{
+                        string = "三";
+                        break;
+                }case 4:{
+                        string = "四";
+                        break;
+                }case 5:{
+                        string = "五";
+                        break;
+                }case 6:{
+                        string = "六";
+                        break;
+                }
+            }
+            document.getElementById("currentDay").innerHTML = string;
+        }
+        
+        
     </script>
-    
+    <script>
+            function currentDayAgain(){
+            var day = new Date().getDay();
+            var week = "";
+//            boolean isWeekend;
+            switch(day){
+                case 0:{
+                        week = "今天是周日";
+//                        isWeekend = 0;
+                        break;
+                }
+                case 6:{
+                        week = "今天是周六";
+//                        isWeekend = 0;
+                        break;
+                }
+                default :{
+                    week = "今天是工作日";
+//                    isWeekend = 1;
+                }
+                
+            }
+            document.getElementById("currentDayAgain").innerHTML = week;
+            
+//            if(isWeekend > 0){
+//                week = "今天是工作日";
+//            }else {
+//                week = "今天是周末";
+//            }
+//            document.getElementById("weekend").innerHTML = week;
+        }
+    </script>
+    <script>
+                function writeFor(){
+                    cars = ["BMW","TOYOTA","Ford"];
+                    for(var i=0;i<cars.length;i++){
+//                        document.getElementById("cars").innerHTML = cars[i];
+                        document.write(cars[i] + "<br />");
+                    }
+                }
+                
+                function namesFor(){
+                    var x = "";
+                    for(var i=0;i<6;i++){
+                        x = x+" the number is "+i+"<br>";
+                    }
+                    document.getElementById("namesFor").innerHTML = x;
+                }
+                
+                function valuesFor(){
+                    var x = "";
+                    names = ["Lima","Candice","Kerr","Erin","Lili A"];
+                    for(var i=0,j=names.length;i<j;i++){
+                        document.write(names[i] + "<br>");
+                    }
+                }
+                
+    </script>
     
 </html>

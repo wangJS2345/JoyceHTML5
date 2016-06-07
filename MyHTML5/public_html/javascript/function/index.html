@@ -24,7 +24,6 @@ and open the template in the editor.
             <button onclick="myFounction()">获取函数返回值</button>
             <br />
             <p>计算，获取返回值</p>
-            <!--<p id="demo"></p>-->
             <p id ="myValueKK"></p>
             <script>
                 function myFunction(a,b){
@@ -32,16 +31,20 @@ and open the template in the editor.
                 }
                 document.getElementById("myValueKK").innerHTML = myFunction(3,9);
             </script>
-
-<!--<script>
-function myFunction(a,b)
-{
-return a*b;
-}
-
-document.getElementById("demo").innerHTML=myFunction(4,3);
-</script>-->
-
+            <hr />
+            <p>比较两个数</p>
+            <button onclick="twoNumber(23,8)">比较大小</button>
+            <script>
+                function twoNumber(a,b){
+                    var c;
+                    if(a<=b){
+                        c = a;
+                    }else {
+                        c = b;
+                    }
+                    document.write(c);
+                }
+            </script>
         </div>
     </body>
     <script>
@@ -58,15 +61,6 @@ document.getElementById("demo").innerHTML=myFunction(4,3);
         }
        
     </script>
-    <script>
-//        var myValue = myFounction();
-//        function myFounction(){
-//            var x = 5;
-//            return x;
-//        }
-//        alert(myValue);
-        
-        
-    </script>
+    
     
 </html>

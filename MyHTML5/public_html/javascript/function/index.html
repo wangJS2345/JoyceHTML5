@@ -93,6 +93,8 @@ and open the template in the editor.
             <button onclick="valuesFor()">点击,显示循环数据</button>
             <p id="valuesFor">显示数据</p>
             <p>看看效果怎么样</p>
+            <h3>省略for循环的初始化参数设置</h3>
+            <button onclick="newFor()">省略设置值</button>
         </div>
     </body>
     <script>
@@ -181,12 +183,6 @@ and open the template in the editor.
             }
             document.getElementById("currentDayAgain").innerHTML = week;
             
-//            if(isWeekend > 0){
-//                week = "今天是工作日";
-//            }else {
-//                week = "今天是周末";
-//            }
-//            document.getElementById("weekend").innerHTML = week;
         }
     </script>
     <script>
@@ -210,6 +206,14 @@ and open the template in the editor.
                     var x = "";
                     names = ["Lima","Candice","Kerr","Erin","Lili A"];
                     for(var i=0,j=names.length;i<j;i++){
+                        document.write(names[i] + "<br>");
+                    }
+                }
+                
+                function newFor(){
+                    names = ["Tyra","Haide","Naomi","IG","Anne V"];
+                    var i=0,j=names.length;
+                    for( ;i<j;i++){
                         document.write(names[i] + "<br>");
                     }
                 }

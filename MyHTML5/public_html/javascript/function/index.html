@@ -96,6 +96,16 @@ and open the template in the editor.
             <h3>省略for循环的初始化参数设置</h3>
             <button onclick="newFor()">省略设置值</button>
         </div>
+        <div>
+            <hr />
+            <h1>2016/6/12</h1>
+            <p>for in循环</p>
+            <button onclick="functionForIN()">for in循环</button>
+            <p id="functionForIN">显示循环结果</p>
+            <h3>While循环</h3>
+            
+        </div>
+        
     </body>
     <script>
         function openAlert(){
@@ -219,5 +229,15 @@ and open the template in the editor.
                 }
                 
     </script>
-    
+    <script>
+        function functionForIN(){
+            var x;
+            var txt = "";
+            var person = {name:"Jinsan",age:25,job:"Writer"};
+            for(x in person){
+                  txt=txt + person[x];
+            }
+            document.getElementById("functionForIN").innerHTML=txt;
+        }
+    </script>
 </html>

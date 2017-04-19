@@ -6,12 +6,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>JavaScript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>JavaScript</div>
         <div>
             <p>显示这一行文字</p>
         </div>
@@ -125,6 +125,10 @@ and open the template in the editor.
             <p>添加数组</p>
         </div>
         <hr/>
+        <div>
+            <p>学习资料来源<a href="http://www.51zxw.net/list.aspx?cid=540">51自学网--HTML5入门教程</a></p>
+        </div>
+
         
     </body>
     
@@ -147,15 +151,18 @@ and open the template in the editor.
                         //点击灯泡,开灯/关灯
             function changeImage()
 {
-element=document.getElementById('myimage');
-if (element.src.match("灯泡1"))
-  {
-  element.src="../images/灯泡/灯泡2.png";
-  }
-else
-  {
-  element.src="../images/灯泡/灯泡1.png";
-  }
+//element=document.getElementById('myimage');
+//if (element.src.match("灯泡1"))
+//  {
+//  element.src="../images/灯泡/灯泡2.png";
+//  }
+//else
+//  {
+//  element.src="../images/灯泡/灯泡1.png";
+//  }
+
+  document.getElementById.src="../images/灯泡/灯泡2.png";
+
 }
 
         </script>
@@ -168,7 +175,7 @@ else
             function checkInput(){
                 var x=document.getElementById("number").value;
                 if(x == "" || isNaN(x)){
-                    alert("not number");
+                    alert("输入内容不仅是数字");
                 }
 
             }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>表格元素上</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--<div>表格元素上</div>-->
+        <h1 style="align-content: center">表格元素(上)</h1>
+        <div>
+            <a href="#table1">1.表格1</a>   <br/>
+            <a href="#table2">2.th元素 表格2</a>  <br/>
+            <a href="#table3">3.横向合并单元格,纵向合并单元格 表格3</a>   <br/>
+            <a href="#table4">4.合并单元格错误示例 表格4</a>   <br/>
+            <a href="#table5">5.表格标题 表格5</a>   <br/>
+            <a href="#table6">6.规范的表格实例 表格6</a> <br/>
+            <a href="#table7">7.colgroup元素 表格7</a> <br/>
+            <a href="#table8">8.col元素 表格8</a> <br/>
+        </div>
+        <hr/>
+        <div>
+            <a name="table1">
+                <table border="2">
+                <p>表格1</p>
+                <tr><td>一行一列</td><td>一行二列</td><td>一行三列</td></tr>
+                <tr><td>二行一列</td><td>二行二列</td><td>二行三列</td></tr>
+                <tr><td>三行一列</td><td>三行二列</td><td>三行三列</td></tr>
+            </table>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table2">
+                <p>2.th元素 表格2</p>
+            <table border="1">
+                <p>表格2</p>
+                <tr><th>第一列</th><th>第二列</th><th>第三列</th></tr>
+                <tr><td>一行一列</td><td>一行二列</td><td>一行三列</td></tr>
+                <tr><td>二行一列</td><td>二行二列</td><td>二行三列</td></tr>
+                <tr><td>三行一列</td><td>三行二列</td><td>三行三列</td></tr>
+            </table>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table3">
+                <p>3.横向合并单元格,纵向合并单元格 表格3</p>
+            <table border="1">
+                <p>表格3</p>
+                <tr><th>第一列</th><th>第二列</th><th>第三列</th></tr>
+                <tr><td>一行一列</td><td>一行二列</td><td>一行三列</td></tr>
+                <tr><td>二行一列</td><td colspan="2">二行二列</td></tr>
+                <tr><td colspan="2">三行一列</td><td>三行二列</td></tr>
+                <tr><td rowspan="2">一列</td><td>四行二列</td><td>四行三列</td></tr>
+                <tr><td>五行二列</td><td>五行三列</td></tr>
+            </table>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table4">
+                <p>4.合并单元格错误示例 表格4</p>
+            <table border="1">
+                <p>表格2</p>
+                <tr><th>第一列</th><th>第二列</th><th>第三列</th></tr>
+                <tr><td colspan="2">一行一列</td><td>一行二列</td><td>一行三列</td></tr>
+                <tr><td rowspan="2">二行一列</td><td>二行二列</td><td>二行三列</td></tr>
+                <tr><td>三行一列</td><td>三行二列</td><td>三行三列</td></tr>
+            </table>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table5">
+                <p>5.表格标题 表格5</p>
+                <table border="1">
+                <caption>表格的标题</caption>
+                <tr><th>第一列</th><th>第二列</th><th>第三列</th></tr>
+                <tr><td>一行一列</td><td>一行二列</td><td>一行三列</td></tr>
+                <tr><td>二行一列</td><td>二行二列</td><td>二行三列</td></tr>
+                <tr><td>三行一列</td><td>三行二列</td><td>三行三列</td></tr>
+            </table>
+            <p>表格标题会自动居中</p>
+            </a>
+            
+        </div>
+        <hr/>
+        <div>
+            <a name="table6">
+                <p>6.规范的表格实例 表格6</p>
+                <p>(1).不规范的表格</p>
+                <table  border="1">
+                <tr><th>标题1</th><th>标题2</th><th>标题3</th><th>标题4</th><th>标题5</th></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+            </table>
+                <br/>
+                <p>(2).规范的表格</p>
+                <table  border="1">
+                    <thead style="background-color: #FAF0E6">
+                        <tr><th>标题1</th><th>标题2</th><th>标题3</th><th>标题4</th><th>标题5</th></tr>
+                    </thead>
+                    <tfoot style="background-color: #FFE4E1">
+                        <!--<tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>-->
+                        <tr><td>备注</td><td colspan="4"></td></tr>
+                    </tfoot>
+                    <tbody style="background-color: #E0FFFF">
+                        <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                        <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                        <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                        <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                    </tbody>
+            </table>
+                <p>thead,tbody,tfoot可以不按照顺序写,实际显示是按照顺序的.</p>
+                <p>如果删除任意一个元素,显示顺序会按照开发顺序显示</p>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table7">
+                <p>7.colgroup元素 表格7</p>
+                <table  border="1">
+                    <!--自定义表格列的宽度-->
+                    <colgroup span="2" style="width: 80px"></colgroup>
+                    <colgroup span="1" style="width: 120px"></colgroup>
+                    <colgroup span="1" style="width: 60px"></colgroup>
+                    <colgroup span="1" style="width: 100px"></colgroup>
+                <tr><th>标题1</th><th>标题2</th><th>标题3</th><th>标题4</th><th>标题5</th></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+            </table>
+            </a>
+        </div>
+        <hr/>
+        <div>
+            <a name="table8">
+                <p>8.col元素 表格8</p>
+                 <table  border="1">
+                    <!--自定义表格列的宽度-->
+                    <colgroup span="2" style="width: 80px">
+                        <!--自定义列的属性-->
+                    <col style="background:#AFEEEE">
+                    <col style="background:#D8BFD8">
+                    </colgroup>
+                    <colgroup span="1" style="width: 120px"></colgroup>
+                    <colgroup span="1" style="width: 60px">
+                        <col style="background:#9ACD32">
+                    </colgroup>
+                    <colgroup span="1" style="width: 100px"></colgroup>
+                <tr><th>标题1</th><th>标题2</th><th>标题3</th><th>标题4</th><th>标题5</th></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+                <tr><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+            </table>
+            </a>
+        </div>
+    </body>
+</html>

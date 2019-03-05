@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sub",
+				"subspec"
+			],
+			[
+				"fra",
+				"frameworks"
+			],
+			[
+				"s",
+				"source_files"
+			],
+			[
+				"sc",
+				"scustomUI"
+			],
+			[
+				"Pod",
+				"Pods"
+			],
+			[
+				"v",
+				"vendored_frameworks"
+			],
+			[
+				"sour",
+				"source_files"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"apicloud",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/wangJS/Desktop/MYGits/HTML5/JoyceHTML5/MyHTML5/public_html/index.html",
+		"/Users/wangJS/Desktop/1.html",
+		"/Users/wangJS/Desktop/flow 2.java",
+		"/Users/wangJS/Desktop/bili.h",
+		"/Users/wangJS/Desktop/bill.m",
+		"/Users/wangJS/Desktop/2.html",
+		"/Users/wangJS/Desktop/flow.java",
+		"/Users/wangJS/Desktop/JSPOST.html",
+		"/Users/wangJS/Desktop/1.json",
+		"/Users/wangJS/Desktop/2.json",
+		"/Users/wangJS/Desktop/HYGit/六之/SixOFThe/Podfile",
+		"/Users/wangJS/Desktop/MYGits/基类/baseDemo/DemoTest/Podfile",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/aperture.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/camera.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/chevron-left.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/copy.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/file-text.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/home.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/layout.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/lock.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/menu.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/more-horizontal.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/play.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/plus-circle.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/search.svg",
+		"/Users/wangJS/Desktop/项目资料/六之/六之 2/user.svg",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/hyNIMdemo/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/3",
+		"/Users/wangJS/Desktop/4.html",
+		"/Users/wangJS/Desktop/2",
+		"/Users/wangJS/Desktop/1",
+		"/Users/wangJS/Desktop/podspec/podspec步骤",
+		"/Users/wangJS/Desktop/1.M",
+		"/Users/wangJS/Desktop/2.m",
+		"/Users/wangJS/Desktop/podspec/Podfile",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/hyNIMdemo/.gitignore",
+		"/Users/wangJS/Desktop/项目资料/项目交接相关资料/公司开发者账号",
+		"/Users/wangJS/Desktop/HYGit/HYNIMDemo_IOS/HYNIMDemo_IOS/NIMDemo/NIMKit/NIMKit/Classes/Global/NIMKitConfig.h~HEAD",
+		"/Users/wangJS/Desktop/HYGit/HYNIMDemo_IOS/HYNIMDemo_IOS/NIMDemo/NIMKit/NIMKit/Classes/Global/NIMKitConfig.h~eea987b32ad393010d81bcc223359a17dff96159",
+		"/Users/wangJS/Desktop/Podfile",
+		"/Users/wangJS/Desktop/podspec/2",
+		"/Users/wangJS/Desktop/Podfile 2",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.2.0/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/打包/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/right/GayFriends/Podfile",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.97/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/podspec/HHXBaseKit.podspec",
+		"/Users/wangJS/Desktop/hyNIMdemo/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.95/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.94/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/GayFriends/Podfile",
+		"/Users/wangJS/Desktop/podspec/清理目录",
+		"/Users/wangJS/Desktop/HYGit/GayFriends/GayFriends/Podfile",
+		"/Users/wangJS/Downloads/ModulesDevProject/ModulesDevProject_iOS/ModulesDevProject/UZApp/widget/index.html",
+		"/Users/wangJS/Desktop/test.js",
+		"/Users/wangJS/Downloads/FSScrollContentView-master/README.md",
+		"/Users/wangJS/Desktop/podspec步骤",
+		"/Users/wangJS/Library/Developer/CoreSimulator/Devices/1B2F12ED-5E9C-4D66-829E-EA39AEA9D9C7/data/Containers/Data/Application/F9CE0465-7AA6-466F-8D1D-E1027A329115/Documents/historyPlay.json",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.9/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.8/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/1.xml",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.5/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/NIMTestDemo/Podfile",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.4/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/Podfile",
+		"/Users/wangJS/Desktop/PodNIMTest/Podfile",
+		"/Users/wangJS/.cocoapods/repos/myNimSDK/MYNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.3/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.2/huiyouNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.1.0/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/HHXBaseKit.podspec",
+		"/Users/wangJS/Desktop/HYGit/HYNimSDK/HYNimSDK/HYNimSDK.podspec",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/NIMDemo/NIMDemo-Prefix.pch",
+		"/Users/wangJS/Desktop/JustTest/Podfile",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.0.7/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/NewTest/Podfile",
+		"/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.5.2/lib/cocoapods/validator.rb",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.0.3/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/1.podspec",
+		"/Users/wangJS/Desktop/huiyouNimSDK1.podspec",
+		"/Users/wangJS/Desktop/1.Podfile",
+		"/Users/wangJS/Desktop/Podfile1",
+		"/Users/wangJS/Desktop/HYGit/MYNimTest/MYNimSDK.podspec",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/Podfile",
+		"/Users/wangJS/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/wangJS/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/wangJS/Desktop/PodTestDemo/Podfile",
+		"/Users/wangJS/.cocoapods/repos/huiyouNimSDK/huiyouNimSDK/0.0.1/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/EmptyDemo/Podfile",
+		"/Users/wangJS/Desktop/NIM_iOS_Demo_v5/NIMDemo/Podfile",
+		"/Users/wangJS/Library/Caches/CocoaPods/search_index.json",
+		"/Users/wangJS/Desktop/Test/Podfile",
+		"/private/var/folders/dt/5msp236j2b51d4jgj6vprshc0000gn/T/HYNim_2018-05-30_18-33-26.383.xcdistributionlogs/IDEDistribution.standard.log",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/huiyouNimSDK/ViewController.m",
+		"/Users/wangJS/Desktop/MyGit/HYYXUIDemo/Podfile",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/1.podspec",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/huiyouNimSDK/0.0.2/huiyouNimSDK.podspec",
+		"/Users/wangJS/Desktop/HYGit/hyNIMdemo/hyNIMdemo.xcodeproj/project.pbxproj",
+		"/Users/wangJS/Desktop/HYGit/MyNim/myNimPod.podspec",
+		"/Users/wangJS/Desktop/HYNimSDK/Podfile",
+		"/Users/wangJS/Desktop/HYGit/MyNim/Podfile",
+		"/Users/wangJS/Desktop/HYGit/MyNim/LICENSE"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

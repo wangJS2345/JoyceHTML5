@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格元素</title>
+</head>
+<body>
+<h1 align="center">表格元素</h1>
+<hr/>
+<h3>表格的三个基本要素</h3>
+<p>1.table：表格的范围，外框；用了定义表格，表格的其他元素包含在table标签里</p>
+<p>2.tr：表格的行</p>
+<p>3.td：表格的单元格</p>
+<hr/>
+<table border="1">
+
+    <tr>
+        <!--列表标题-->
+        <th>第一列</th>
+        <th colspan="2">第二列</th>
+        <th>第三列目</th>
+
+    </tr>
+    <thead>表头</thead>
+<tbody>
+<tr>
+    <td>白日依山尽</td>
+    <td>黄河入海流</td>
+    <td>欲穷千里目</td>
+    <td>更上一层楼</td>
+
+</tr>
+<tr>
+    <!--colspan横向合并单元格，值代表要合并当前单元格到后面的几列-->
+    <td colspan="2">夕阳无限好</td>
+    <td colspan="2">只是近黄昏</td>
+
+</tr>
+
+<tr>
+    <td colspan="4">君不见，黄河之水天上来，奔流到海不复回</td>
+
+</tr>
+<tr>
+    <!--rowspan纵向合并单元格，值代表要合并当前单元格到下面的几列-->
+    <td rowspan="2">白日依山尽</td>
+    <td>黄河入海流</td>
+    <td>欲穷千里目</td>
+    <td>更上一层楼</td>
+
+</tr>
+<tr>
+    <td>黄河入海流</td>
+    <td>欲穷千里目</td>
+    <td>更上一层楼</td>
+
+</tr>
+<tr>
+    <!--caption给表格添加标题，注意是整体table的标题-->
+    <caption>表格</caption>
+    <td>白日依山尽</td>
+    <td>黄河入海流</td>
+    <td>欲穷千里目</td>
+    <td>更上一层楼</td>
+
+</tr>
+</tbody>
+
+<tfoot>表尾</tfoot>
+
+
+</table>
+
+
+<hr/>
+<table border="3">
+    <thead>
+    <tr><td>备注：</td><td colspan="4"></td></tr>
+    </thead>
+    <tr>
+        <td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+    <tr><td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+    <tr><td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+
+<tfoot>
+<tr><td colspan="3"></td><td>合计</td></tr>
+</tfoot>
+
+</table>
+
+<hr/>
+<!--colorspan-->
+<table border="3">
+    <colgroup span="2" style="width: 300"></colgroup>
+    <thead>
+    <tr><td>备注：</td><td colspan="4"></td></tr>
+    </thead>
+    <tr>
+        <td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+    <tr><td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+    <tr><td>白日依山尽</td>
+        <td>黄河入海流</td>
+        <td>欲穷千里目</td>
+        <td>更上一层楼</td>
+    </tr>
+
+    <tfoot>
+    <tr><td colspan="3"></td><td>合计</td></tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
